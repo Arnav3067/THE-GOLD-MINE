@@ -53,7 +53,7 @@ def star(size) :
         turtle.forward(size)
         turtle.right(144)
         
-
+turtle.speed(50)
 #run them each seperatly
 
 #1
