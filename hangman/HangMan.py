@@ -29,11 +29,11 @@ class Game :
     def initialise(cls) :
         
         userName = input("Enter the username: ").strip()
-        level = int(input('Enter level: '))
+        level = int(input('Enter level (1-3): '))
         
-        if level == 1 : return cls(userName, ['cat', 'pet', 'bag'], level)
-        elif level == 2 : return cls(userName, ['cloud', 'train', 'table'], level)
-        elif level == 3 : return cls(userName, ['python', 'friction', 'javascript'], level)
+        if level == 1 : return cls(userName, ['hello', 'world', 'code'], level)
+        elif level == 2 : return cls(userName, ['whales', 'resistance', 'computers', 'hemoglobin', 'velocity'], level)
+        elif level == 3 : return cls(userName, ['python', 'friction', 'javascript', 'css', 'hitler'], level)
         
         
 
