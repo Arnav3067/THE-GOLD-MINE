@@ -18,7 +18,7 @@ Choice: """,
         print(f"The number in binary form is: {DecimalToBinary(binary)}")
     else :
         num1, num2 = util.entryCheck("Enter your two binary numbers (b + b): ", r"^[01]+\s{1}[01]+$",Type="string").strip().split()
-        print(f"The total value is: {BinaryToDecimal(num1) + BinaryToDecimal(num2)}")
+        print(f"The total value is: {DecimalToBinary(BinaryToDecimal(num1) + BinaryToDecimal(num2))}")
     
         
 
