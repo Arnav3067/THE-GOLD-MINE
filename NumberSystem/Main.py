@@ -6,8 +6,7 @@ Enter 1 for binary to decimal conversion:
 Enter 2 for Decimal to binary conversion:
 Enter 3 to add two binary numbers       :
 Choice: """,
-                              r"^[123]{1}$",
-                              )
+                              r"^[123]{1}$")
     
     if Choice == 1 :
         number = util.entryCheck("Enter your binary number: ", r"^[01]+$", Type="string")
@@ -19,8 +18,6 @@ Choice: """,
     else :
         num1, num2 = util.entryCheck("Enter your two binary numbers (b + b): ", r"^[01]+\s{1}[01]+$",Type="string").strip().split()
         print(f"The result is: {AddBinary(num1, num2)}")
-    
-        
 
 def BinaryToDecimal(number: str) :
     AList = []
@@ -68,12 +65,7 @@ def AddBinary(a: str, b: str) :
         total += "1"
     
     return total
-    
 
-        
-             
 
-    
-    
 if __name__ == "__main__" :
     main() 
