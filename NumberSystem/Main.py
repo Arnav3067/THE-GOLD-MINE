@@ -32,6 +32,12 @@ def BinaryToDecimal(number: str) :
         j = j-1
     return total
 
+    # bin = input("enter the binary");
+    # dex= 0 
+    # for i in bin :
+        #dex = dex * 2 + int(number)
+    # return dex
+
 def DecimalToBinary(number: int) :
     remainder = 0
     List = []
