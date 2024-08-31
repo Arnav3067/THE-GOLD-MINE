@@ -1,5 +1,5 @@
-import VeryUsefulStuff as vus
-import colorama
+import VeryUsefulStuff as vus # this lib is provided
+import colorama # install using pip
 from colorama import Fore
 colorama.init(autoreset=True)
 
