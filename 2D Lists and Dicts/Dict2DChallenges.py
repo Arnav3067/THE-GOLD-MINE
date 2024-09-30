@@ -12,17 +12,17 @@ Dict2D = {
 
 def _main():
     
-    # # challenge 6
-    # name = vus.entryCheck("Enter a name: ", r"^[a-zA-Z]+$", Type="string").lower()
-    # region = vus.entryCheck("Enter a region: ", r"^[NSEW]{1}$", Type="string")
-    # l.DisplayElement(name, region, Dict2D)
-    # name = vus.entryCheck("\nWhose data do you want to change: ", r"^[a-zA-Z]+$", "Row does not exists", "string")
-    # l.DisplayRow(name, Dict2D)
-    # region = vus.entryCheck("Enter a region:  ", r"^[NSEW]{1}$", "Row does not exists", "string")
-    # l.DisplayElement(name,region, Dict2D)
-    # value = vus.entryCheck("Enter the new value: ", r"^[0-9]+$")
-    # l.ChangeElement(name, region, value, Dict2D)
-    # l.DisplayRow(name, Dict2D)
+    # challenge 6
+    name = vus.entryCheck("Enter a name: ", r"^[a-zA-Z]+$", Type="string").lower()
+    region = vus.entryCheck("Enter a region: ", r"^[NSEW]{1}$", Type="string")
+    l.DisplayElement(name, region, Dict2D)
+    name = vus.entryCheck("\nWhose data do you want to change: ", r"^[a-zA-Z]+$", "Row does not exists", "string")
+    l.DisplayRow(name, Dict2D)
+    region = vus.entryCheck("Enter a region:  ", r"^[NSEW]{1}$", "Row does not exists", "string")
+    l.DisplayElement(name,region, Dict2D)
+    value = vus.entryCheck("Enter the new value: ", r"^[0-9]+$")
+    l.ChangeElement(name, region, value, Dict2D)
+    l.DisplayRow(name, Dict2D)
 
 
     # challenge 7
@@ -33,12 +33,12 @@ def _main():
         age = vus.entryCheck("Enter their age: ", r"^[0-9]+$")
         Dict[name] = {"age": age, "shoeSize" : shoeSize}
     
-    # name = vus.entryCheck("Enter a name: ", r"^[a-zA-Z]+$", Type="string").lower()
-    # l.DisplayRow(name, Dict)
+    name = vus.entryCheck("Enter a name: ", r"^[a-zA-Z]+$", Type="string").lower()
+    l.DisplayRow(name, Dict)
 
-    # # challenge 8
-    # for key, value in Dict.items():
-    #     print(f"name : {key}    age: {value['age']}")
+    # challenge 8
+    for key, value in Dict.items():
+        print(f"name : {key}    age: {value['age']}")
     name = "" 
     while name not in Dict.keys() :
         name = vus.entryCheck("Enter a name you want to delete: ", r"^[a-zA-Z]+$", Type="string")
